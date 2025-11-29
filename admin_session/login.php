@@ -169,6 +169,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
       </div>
 
       <button class="btn" type="submit">Masuk</button>
+      <center><a href="../index.php" class="" style="margin-top: 10px;">Kembali ke Beranda</a></center>
+      
     </form>
 
     <div style="text-align: center; margin-top: 20px; font-size: 0.85rem; color: #888;">

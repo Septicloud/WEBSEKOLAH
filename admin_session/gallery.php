@@ -20,7 +20,6 @@ mysqli_stmt_close($stmt);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard - Galeri Foto</title>
-   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="../CSS/style.css">
@@ -91,7 +90,7 @@ mysqli_stmt_close($stmt);
                         <div class="photo-card">
                             <img src="../uploads/galeri/<?= htmlspecialchars($photo['file_foto']) ?>" 
                                  alt="<?= htmlspecialchars($photo['nama_foto']) ?>"
-                                 onerror="this.src='https://via.placeholder.com/300x200?text=No+Image'">
+                                 onerror="this.src=''">
                             <div class="body">
                                 <h5><?= htmlspecialchars($photo['nama_foto']) ?></h5>
                                 <p><?= htmlspecialchars(substr($photo['deskripsi'], 0, 80)) ?><?= strlen($photo['deskripsi']) > 80 ? '...' : '' ?></p>

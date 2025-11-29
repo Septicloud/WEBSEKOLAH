@@ -18,7 +18,7 @@ $feed_url = "https://slbrozasoreang.blogspot.com/feeds/posts/default?alt=json&ma
 
 // SISTEM CACHE
 $cache_file = __DIR__ . "/cache/blog_cache.json";
-$cache_expire = 60 * 10; // 10 menit
+$cache_expire = 0 * 0 ; // 0 menit
 
 if (file_exists($cache_file) && (time() - filemtime($cache_file)) < $cache_expire) {
     $json = file_get_contents($cache_file);
@@ -38,7 +38,7 @@ if (!$data || !isset($data['feed']['entry'])) {
 }
 
 $entries = $data['feed']['entry'];
-$max_articles = 6;
+$max_articles = 8;
 
 echo '<section class="article-section">
         <div class="container my-5">
